@@ -4,5 +4,7 @@
 # SPDX-License-Identifier: LicenseRef-ALLCircuits-ACT-1.1
 # SPDX-License-Identifier: BSD-3-Clause
 #
-
 LIB_TI_MSPM0_DRIVERS_DIR:=$(dir $(lastword $(MAKEFILE_LIST)))
+
+CHECK_EXCLUDE_PATH+=$(LIB_TI_MSPM0_DRIVERS_DIR)
+
